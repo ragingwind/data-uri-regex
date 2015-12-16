@@ -1,6 +1,6 @@
 {
   "name": "data-uri-regex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Regexp for data-uri",
   "license": "MIT",
   "repository": "ragingwind/data-uri-regex",
