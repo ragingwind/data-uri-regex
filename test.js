@@ -43,15 +43,6 @@ test('Regexp returns parts of data-uri for zip', t => {
 	t.is(regex().exec(zip)[4].slice(0, 3), 'UEs');
 });
 
-test('Regexp returns parts of data-uri for zip', t => {
-	t.truthy(zip.match(regex()));
-	t.truthy(regex().test(zip));
-	t.is(regex().exec(zip)[1], 'data:');
-	t.is(regex().exec(zip)[2], 'application/x-zip-compressed');
-	t.is(regex().exec(zip)[3], ';base64');
-	t.is(regex().exec(zip)[4].slice(0, 3), 'UEs');
-});
-
 test('Regexp returns parts of data-uri for empty MIME type', t => {
 	t.truthy(note.match(regex()));
 	t.truthy(regex().test(note));
